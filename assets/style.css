@@ -29,3 +29,9 @@ input {
   text-align: left;
   font-size: 14px;
 }
+.search-section {
+  background-color: lightgrey;
+  margin-top: -8px;
+  margin-right: 8px;
+  margin-bottom: -50px;
+}
