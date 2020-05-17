@@ -1,12 +1,31 @@
+body {
+  background-color: gainsboro;
+}
 h2 {
   color: whitesmoke;
   background-color: teal;
   text-align: center;
 }
-i {
-  color: black;
-  padding: 5px;
+button {
+  color: whitesmoke;
+  background-color: teal;
+  padding: 7px;
+  border: transparent;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+button :hover {
+  outline-color: purple;
 }
 input {
-  margin: 10px;
+  margin-top: 10px;
+  margin-right: 0;
+}
+
+.jumbotron {
+  margin-top: 10px;
+  background-color: whitesmoke;
+  color: black;
+  text-align: left;
+  font-size: 14px;
 }
