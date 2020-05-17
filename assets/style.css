@@ -35,3 +35,8 @@ input {
   margin-right: 8px;
   margin-bottom: -50px;
 }
+
+.container .jumbotron {
+  padding-right: 60px;
+  padding-top: 30px;
+}
