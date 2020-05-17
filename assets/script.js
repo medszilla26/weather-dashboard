@@ -3,7 +3,7 @@ $("#find-city").on("click", function (event) {
 
   var city = $("#city-input").val();
   var queryURL =
-    "http://api.openweathermap.org/data/2.5/weather?" +
+    "http://api.openweathermap.org/data/2.5/weather?q=" +
     city +
     "&APPID=2839b1208e73b48cb9463ede4e8db9f1";
 
