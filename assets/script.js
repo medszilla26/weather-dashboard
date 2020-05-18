@@ -50,5 +50,23 @@ var today = new Date();
 var dd = String(today.getDate()).padStart(2, "0");
 var mm = String(today.getMonth() + 1).padStart(2, "0");
 var yyyy = today.getFullYear();
-
 today = "(" + mm + "/" + dd + "/" + yyyy + ")";
+
+var cities = [""];
+function renderButtons() {
+  $("#history-search").empty();
+  for (var i = 0; i < cities.length; i++) {
+    var a = $("<button>");
+    a.addClass("searchedCity");
+    a.attr("data-city", cities[i]);
+    a.text(cities[i]);
+    $("#history-search").append(a);
+  }
+}
+
+$("#find-city").on("click", function (event) {
+  event.preventDefault();
+  var inputCity = $("#city-input").val().trim();
+  cities.push(inputCity);
+  renderButtons();
+});
