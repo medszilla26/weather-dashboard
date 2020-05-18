@@ -52,7 +52,7 @@ var mm = String(today.getMonth() + 1).padStart(2, "0");
 var yyyy = today.getFullYear();
 today = "(" + mm + "/" + dd + "/" + yyyy + ")";
 
-var cities = [""];
+var cities = [];
 function renderButtons() {
   $("#history-search").empty();
   for (var i = 0; i < cities.length; i++) {
