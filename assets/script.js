@@ -2,7 +2,7 @@ function searchWeatherAPI(city) {
   var queryURL =
     "http://api.openweathermap.org/data/2.5/weather?q=" +
     city +
-    "&APPID=2839b1208e73b48cb9463ede4e8db9f1";
+    "&units=imperial&APPID=2839b1208e73b48cb9463ede4e8db9f1";
   $.ajax({
     url: queryURL,
     method: "GET",
