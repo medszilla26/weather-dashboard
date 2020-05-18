@@ -9,8 +9,12 @@ function searchWeatherAPI(city) {
   }).then(function (response) {
     console.log(response);
     var cityName = $("<h3>").text(response.name);
+    var cityTemp = $("<p>").text("Temperature: " + response.main.temp);
+    var cityHum = $("<p>").text("Humidity: " + response.main.humidity);
+    var cityWindSpd = $("<p>").text("Wind Speed: " + response.wind.speed);
+
     $("#city-div").empty();
-    $("#city-div").append(cityName);
+    $("#city-div").append(cityName, cityTemp, cityHum, cityWindSpd);
   });
 }
 

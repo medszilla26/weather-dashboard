@@ -6,6 +6,9 @@ h2 {
   background-color: teal;
   text-align: center;
 }
+p {
+  font-size: 14px;
+}
 button {
   color: whitesmoke;
   background-color: teal;

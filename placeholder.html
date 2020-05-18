@@ -23,3 +23,13 @@
     </div>
   </div>
 </div>
+
+$("#find-city").on("click", function (event) { event.preventDefault(); var
+cityInput = $("#city-input").val(); var queryURL =
+"http://api.openweathermap.org/data/2.5/weather?q=" + cityInput +
+"&APPID=2839b1208e73b48cb9463ede4e8db9f1"; $.ajax({ url: queryURL, method:
+"GET", }).then(function (response) {}); }); var cityName = $("
+<h3>
+  ").text(response.name); $("#city-div").empty();
+  $("#city-div").append(cityName);
+</h3>
