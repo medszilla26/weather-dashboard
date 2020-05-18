@@ -52,6 +52,7 @@ var mm = String(today.getMonth() + 1).padStart(2, "0");
 var yyyy = today.getFullYear();
 today = "(" + mm + "/" + dd + "/" + yyyy + ")";
 
+//Creates button for previous searched cities
 var cities = [];
 function renderButtons() {
   $("#history-search").empty();
@@ -63,7 +64,6 @@ function renderButtons() {
     $("#history-search").append(a);
   }
 }
-
 $("#find-city").on("click", function (event) {
   event.preventDefault();
   var inputCity = $("#city-input").val().trim();

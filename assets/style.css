@@ -17,8 +17,11 @@ p {
   margin-top: 10px;
   border-radius: 3px;
 }
-.find-city-btn :hover {
-  outline-color: purple;
+.find-city-btn:hover {
+  background-color: purple;
+}
+.searchedCity {
+  background-color: teal;
 }
 input {
   margin-top: 10px;
@@ -50,4 +53,5 @@ input {
   padding: 20px;
   align-content: center;
   text-align: center;
+  justify-content: center;
 }
