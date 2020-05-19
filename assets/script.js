@@ -21,25 +21,6 @@ function searchWeatherAPI(city) {
   });
 }
 
-/*function fiveDayForecast(city) {
-  var queryURL =
-    "api.openweathermap.org/data/2.5/forecast?q=" +
-    city +
-    "&APPID=2839b1208e73b48cb9463ede4e8db9f1";
-  $.ajax({
-    url: queryURL,
-    method: "GET",
-  }).then(function (response) {
-    console.log(response);
-    var Temp5 = $();
-  });
-}*/
-
-/*function searchUV(uvIndex) {
-  var uvURL =
-    "http://api.openweathermap.org/data/2.5/uvi/forecast?&APPID=2839b1208e73b48cb9463ede4e8db9f1";
-  console.log(response);
-}*/
 $("#find-city").on("click", function (event) {
   event.preventDefault();
   var inputCity = $("#city-input").val().trim();
@@ -71,4 +52,4 @@ $("#find-city").on("click", function (event) {
   cities.push(inputCity);
   renderButtons();
 });
-$(document).on("click", ".searchedCity", searchWeatherAPI(city));
+$(document).on("click", ".searchedCity", searchWeatherAPI);
