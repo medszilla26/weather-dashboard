@@ -21,7 +21,13 @@ p {
   background-color: purple;
 }
 .searchedCity {
-  background-color: teal;
+  background-color: whitesmoke;
+  padding: 7px;
+  margin: 5px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 3px;
 }
 input {
   margin-top: 10px;
